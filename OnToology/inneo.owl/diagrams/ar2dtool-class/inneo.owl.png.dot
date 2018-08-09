@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Patent" "base:Organization" "base:InnovationEcosystem" ; /*classes style*/
+	"base:origin" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasRelation" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:Organization" -> "http://www.w3.org/ns/org#Organization" [ label = ":exactMatch" ];
+	"base:InnovationEcosystem" -> "owl:Thing" [ label = "base:scope" ];
+	"base:InnovationEcosystem" -> "base:Organization" [ label = "base:hasOrganization" ];
+	"base:InnovationEcosystem" -> "xsd:float" [ label = "base:dynamism" ];
+	"base:Organization" -> "owl:Thing" [ label = "base:typeOfInnovationApplication" ];
+	"base:InnovationEcosystem" -> "xsd:float" [ label = "base:relevance" ];
+	"base:InnovationEcosystem" -> "owl:Thing" [ label = "base:innovationEcosystemType" ];
+	"base:Organization" -> "base:Patent" [ label = "base:hasPatent" ];
+	"base:Organization" -> "base:Organization" [ label = "base:hasRelation" ];
+	"base:Organization" -> "base:Patent" [ label = "base:grantsPatent" ];
+	"base:InnovationEcosystem" -> "xsd:float" [ label = "base:efficiency" ];
+
+}

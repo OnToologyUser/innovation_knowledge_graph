@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Investment" "base:InnovationRelation" "base:Acquisition" ; /*classes style*/
+	"base:Acquisition" -> "base:InnovationRelation" [ label = "rdfs:subClassOf" ];
+	"base:Investment" -> "base:InnovationRelation" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,96 @@
+{
+  "@context" : {
+    "hasPatent" : {
+      "@id" : "http://inneo.linkeddata.es#hasPatent",
+      "@type" : "@id"
+    },
+    "innovationEcosystemType" : {
+      "@id" : "http://inneo.linkeddata.es#innovationEcosystemType"
+    },
+    "origin" : {
+      "@id" : "http://inneo.linkeddata.es#origin"
+    },
+    "Organization" : {
+      "@id" : "http://inneo.linkeddata.es#Organization"
+    },
+    "PatentLicense" : {
+      "@id" : "http://inneo.linkeddata.es#PatentLicense"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Investment" : {
+      "@id" : "http://inneo.linkeddata.es#Investment"
+    },
+    "sector" : {
+      "@id" : "http://inneo.linkeddata.es#sector"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "relevance" : {
+      "@id" : "http://inneo.linkeddata.es#relevance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "exactMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch"
+    },
+    "Patent" : {
+      "@id" : "http://inneo.linkeddata.es#Patent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "dynamism" : {
+      "@id" : "http://inneo.linkeddata.es#dynamism",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "scope" : {
+      "@id" : "http://inneo.linkeddata.es#scope"
+    },
+    "hasRelation" : {
+      "@id" : "http://inneo.linkeddata.es#hasRelation",
+      "@type" : "@id"
+    },
+    "typeOfInnovationApplication" : {
+      "@id" : "http://inneo.linkeddata.es#typeOfInnovationApplication"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "hasOrganization" : {
+      "@id" : "http://inneo.linkeddata.es#hasOrganization",
+      "@type" : "@id"
+    },
+    "InnovationEcosystem" : {
+      "@id" : "http://inneo.linkeddata.es#InnovationEcosystem"
+    },
+    "Acquisition" : {
+      "@id" : "http://inneo.linkeddata.es#Acquisition"
+    },
+    "efficiency" : {
+      "@id" : "http://inneo.linkeddata.es#efficiency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "grantsPatent" : {
+      "@id" : "http://inneo.linkeddata.es#grantsPatent",
+      "@type" : "@id"
+    },
+    "InnovationRelation" : {
+      "@id" : "http://inneo.linkeddata.es#InnovationRelation"
+    }
+  }
+}

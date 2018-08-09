@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://inneo.linkeddata.es#"
+     xml:base="http://inneo.linkeddata.es"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://inneo.linkeddata.es">
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Víctor Rodríguez-Doncel</terms:contributor>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto Tejero</terms:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-07-23</terms:date>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Innovation Ecosystems Ontology</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://inneo.linkeddata.es#grantsPatent -->
+
+
+    <owl:ObjectProperty rdf:about="http://inneo.linkeddata.es#grantsPatent">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#Organization"/>
+        <rdfs:range rdf:resource="http://inneo.linkeddata.es#Patent"/>
+        <rdfs:comment xml:lang="en">NO HE ENTENDIDO LA NECESIDAD DE ESTO...Es para incluir la relación de una Oficina de Patentes y marcas con una patente concreta</rdfs:comment>
+        <rdfs:label xml:lang="en">grants patent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#hasOrganization -->
+
+
+    <owl:ObjectProperty rdf:about="http://inneo.linkeddata.es#hasOrganization">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#InnovationEcosystem"/>
+        <rdfs:range rdf:resource="http://inneo.linkeddata.es#Organization"/>
+        <rdfs:label xml:lang="en">has organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#hasPatent -->
+
+
+    <owl:ObjectProperty rdf:about="http://inneo.linkeddata.es#hasPatent">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#Organization"/>
+        <rdfs:range rdf:resource="http://inneo.linkeddata.es#Patent"/>
+        <rdfs:label xml:lang="en">has patent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#hasRelation -->
+
+
+    <owl:ObjectProperty rdf:about="http://inneo.linkeddata.es#hasRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#Organization"/>
+        <rdfs:range rdf:resource="http://inneo.linkeddata.es#Organization"/>
+        <rdfs:comment xml:lang="en">Def. Organization participating in a relation</rdfs:comment>
+        <rdfs:label xml:lang="en">has relation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://inneo.linkeddata.es#dynamism -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#dynamism">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#InnovationEcosystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Dynamism is defined as the capacity of movement of knowledge through actors and their relationships within the innovation ecosystem</rdfs:comment>
+        <rdfs:label xml:lang="en">dynamism</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#efficiency -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#efficiency">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#InnovationEcosystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Efficiency is defined as the capacity to transform knowdlegde in useful resources for the ecosystem and its context </rdfs:comment>
+        <rdfs:label xml:lang="en">efficiency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#innovationEcosystemType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#innovationEcosystemType">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#InnovationEcosystem"/>
+        <rdfs:comment xml:lang="en">Innovation ecosystems are dynamic systems made up by actors and connected by knowledge flows based on the relationships of these actors</rdfs:comment>
+        <rdfs:label xml:lang="en">innovation ecosystem type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#origin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#origin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#relevance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#relevance">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#InnovationEcosystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">It represents how relevant an innovation ecosystem is for economic growth of its context</rdfs:comment>
+        <rdfs:label xml:lang="en">relevance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#scope -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#scope">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#InnovationEcosystem"/>
+        <rdfs:comment xml:lang="en">Gives a description about the belonging of an innovation ecosystem, for example an entity as the Universidad Politécnica de Madrid, or even a region as Madrid</rdfs:comment>
+        <rdfs:label xml:lang="en">scope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://inneo.linkeddata.es#sector -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#sector"/>
+    
+
+
+    <!-- http://inneo.linkeddata.es#typeOfInnovationApplication -->
+
+
+    <owl:DatatypeProperty rdf:about="http://inneo.linkeddata.es#typeOfInnovationApplication">
+        <rdfs:domain rdf:resource="http://inneo.linkeddata.es#Organization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://inneo.linkeddata.es#Acquisition -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#Acquisition">
+        <rdfs:subClassOf rdf:resource="http://inneo.linkeddata.es#InnovationRelation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://inneo.linkeddata.es#InnovationEcosystem -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#InnovationEcosystem">
+        <rdfs:comment xml:lang="en">Innovation ecosystems are dynamic systems made up by actors and connected by knowledge flows based on the relationships of these actors</rdfs:comment>
+        <rdfs:label xml:lang="en">Innovation Ecosystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://inneo.linkeddata.es#InnovationRelation -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#InnovationRelation">
+        <rdfs:comment xml:lang="en">Innovation Relation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://inneo.linkeddata.es#Investment -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#Investment">
+        <rdfs:subClassOf rdf:resource="http://inneo.linkeddata.es#InnovationRelation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://inneo.linkeddata.es#Organization -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#Organization">
+        <rdfs:comment xml:lang="en">Organization represents a collection of people organized together into a community or other social, commercial or political structure, who share common goals</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://inneo.linkeddata.es#Patent -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#Patent">
+        <rdfs:comment xml:lang="en">def</rdfs:comment>
+        <rdfs:label xml:lang="en">Patent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://inneo.linkeddata.es#PatentLicense -->
+
+
+    <owl:Class rdf:about="http://inneo.linkeddata.es#PatentLicense"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

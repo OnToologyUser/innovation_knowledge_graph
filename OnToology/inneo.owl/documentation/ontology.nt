@@ -1,0 +1,147 @@
+<http://inneo.linkeddata.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://inneo.linkeddata.es> <http://purl.org/dc/terms/contributor> "V\u00EDctor Rodr\u00EDguez-Doncel" .
+<http://inneo.linkeddata.es> <http://purl.org/dc/terms/creator> "Alberto Tejero" .
+<http://inneo.linkeddata.es> <http://purl.org/dc/terms/date> "2018-07-23" .
+<http://inneo.linkeddata.es> <http://purl.org/dc/terms/title> "Innovation Ecosystems Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://inneo.linkeddata.es#grantsPatent
+<http://inneo.linkeddata.es#grantsPatent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://inneo.linkeddata.es#grantsPatent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#Organization> .
+<http://inneo.linkeddata.es#grantsPatent> <http://www.w3.org/2000/01/rdf-schema#range> <http://inneo.linkeddata.es#Patent> .
+<http://inneo.linkeddata.es#grantsPatent> <http://www.w3.org/2000/01/rdf-schema#comment> "NO HE ENTENDIDO LA NECESIDAD DE ESTO...Es para incluir la relaci\u00F3n de una Oficina de Patentes y marcas con una patente concreta"@en .
+<http://inneo.linkeddata.es#grantsPatent> <http://www.w3.org/2000/01/rdf-schema#label> "grants patent"@en .
+# 
+# http://inneo.linkeddata.es#hasOrganization
+<http://inneo.linkeddata.es#hasOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://inneo.linkeddata.es#hasOrganization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#InnovationEcosystem> .
+<http://inneo.linkeddata.es#hasOrganization> <http://www.w3.org/2000/01/rdf-schema#range> <http://inneo.linkeddata.es#Organization> .
+<http://inneo.linkeddata.es#hasOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "has organization"@en .
+# 
+# http://inneo.linkeddata.es#hasPatent
+<http://inneo.linkeddata.es#hasPatent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://inneo.linkeddata.es#hasPatent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#Organization> .
+<http://inneo.linkeddata.es#hasPatent> <http://www.w3.org/2000/01/rdf-schema#range> <http://inneo.linkeddata.es#Patent> .
+<http://inneo.linkeddata.es#hasPatent> <http://www.w3.org/2000/01/rdf-schema#label> "has patent"@en .
+# 
+# http://inneo.linkeddata.es#hasRelation
+<http://inneo.linkeddata.es#hasRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://inneo.linkeddata.es#hasRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://inneo.linkeddata.es#hasRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#Organization> .
+<http://inneo.linkeddata.es#hasRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://inneo.linkeddata.es#Organization> .
+<http://inneo.linkeddata.es#hasRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Def. Organization participating in a relation"@en .
+<http://inneo.linkeddata.es#hasRelation> <http://www.w3.org/2000/01/rdf-schema#label> "has relation"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://inneo.linkeddata.es#dynamism
+<http://inneo.linkeddata.es#dynamism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#dynamism> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#InnovationEcosystem> .
+<http://inneo.linkeddata.es#dynamism> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://inneo.linkeddata.es#dynamism> <http://www.w3.org/2000/01/rdf-schema#comment> "Dynamism is defined as the capacity of movement of knowledge through actors and their relationships within the innovation ecosystem"@en .
+<http://inneo.linkeddata.es#dynamism> <http://www.w3.org/2000/01/rdf-schema#label> "dynamism"@en .
+# 
+# http://inneo.linkeddata.es#efficiency
+<http://inneo.linkeddata.es#efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#efficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#InnovationEcosystem> .
+<http://inneo.linkeddata.es#efficiency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://inneo.linkeddata.es#efficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Efficiency is defined as the capacity to transform knowdlegde in useful resources for the ecosystem and its context "@en .
+<http://inneo.linkeddata.es#efficiency> <http://www.w3.org/2000/01/rdf-schema#label> "efficiency"@en .
+# 
+# http://inneo.linkeddata.es#innovationEcosystemType
+<http://inneo.linkeddata.es#innovationEcosystemType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#innovationEcosystemType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#InnovationEcosystem> .
+<http://inneo.linkeddata.es#innovationEcosystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Innovation ecosystems are dynamic systems made up by actors and connected by knowledge flows based on the relationships of these actors"@en .
+<http://inneo.linkeddata.es#innovationEcosystemType> <http://www.w3.org/2000/01/rdf-schema#label> "innovation ecosystem type"@en .
+# 
+# http://inneo.linkeddata.es#origin
+<http://inneo.linkeddata.es#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#origin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://inneo.linkeddata.es#relevance
+<http://inneo.linkeddata.es#relevance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#relevance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#InnovationEcosystem> .
+<http://inneo.linkeddata.es#relevance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://inneo.linkeddata.es#relevance> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents how relevant an innovation ecosystem is for economic growth of its context"@en .
+<http://inneo.linkeddata.es#relevance> <http://www.w3.org/2000/01/rdf-schema#label> "relevance"@en .
+# 
+# http://inneo.linkeddata.es#scope
+<http://inneo.linkeddata.es#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#InnovationEcosystem> .
+<http://inneo.linkeddata.es#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "Gives a description about the belonging of an innovation ecosystem, for example an entity as the Universidad Polit\u00E9cnica de Madrid, or even a region as Madrid"@en .
+<http://inneo.linkeddata.es#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
+# 
+# http://inneo.linkeddata.es#sector
+<http://inneo.linkeddata.es#sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://inneo.linkeddata.es#typeOfInnovationApplication
+<http://inneo.linkeddata.es#typeOfInnovationApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://inneo.linkeddata.es#typeOfInnovationApplication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://inneo.linkeddata.es#Organization> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://inneo.linkeddata.es#Acquisition
+<http://inneo.linkeddata.es#Acquisition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inneo.linkeddata.es#Acquisition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inneo.linkeddata.es#InnovationRelation> .
+# 
+# http://inneo.linkeddata.es#InnovationEcosystem
+<http://inneo.linkeddata.es#InnovationEcosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inneo.linkeddata.es#InnovationEcosystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Innovation ecosystems are dynamic systems made up by actors and connected by knowledge flows based on the relationships of these actors"@en .
+<http://inneo.linkeddata.es#InnovationEcosystem> <http://www.w3.org/2000/01/rdf-schema#label> "Innovation Ecosystem"@en .
+# 
+# http://inneo.linkeddata.es#InnovationRelation
+<http://inneo.linkeddata.es#InnovationRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inneo.linkeddata.es#InnovationRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Innovation Relation"@en .
+# 
+# http://inneo.linkeddata.es#Investment
+<http://inneo.linkeddata.es#Investment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inneo.linkeddata.es#Investment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://inneo.linkeddata.es#InnovationRelation> .
+# 
+# http://inneo.linkeddata.es#Organization
+<http://inneo.linkeddata.es#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inneo.linkeddata.es#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization represents a collection of people organized together into a community or other social, commercial or political structure, who share common goals"@en .
+<http://inneo.linkeddata.es#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+<http://inneo.linkeddata.es#Organization> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/ns/org#Organization> .
+# 
+# http://inneo.linkeddata.es#Patent
+<http://inneo.linkeddata.es#Patent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inneo.linkeddata.es#Patent> <http://www.w3.org/2000/01/rdf-schema#comment> "def"@en .
+<http://inneo.linkeddata.es#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patent"@en .
+# 
+# http://inneo.linkeddata.es#PatentLicense
+<http://inneo.linkeddata.es#PatentLicense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
